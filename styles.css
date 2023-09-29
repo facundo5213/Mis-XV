@@ -1,0 +1,82 @@
+/*
+body{
+    background-color: rgb(16, 8, 121);
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  background: url('Tarjeta\ de\ invitación\ 15\ años\ ilustrada\ mariposas\ rosa\ y\ blanco.mp4') no-repeat center center fixed;
+  background-size: cover;
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000000;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1.5px solid #0026ff;
+    transition: 0.5s ease;
+    user-select: none;
+    text-decoration: none;
+  }
+  
+  #btn:hover,:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+  }
+
+  .video-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: -1;
+}
+  .container {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%; /* Para asegurarse de que el contenido no se desborde en pantallas pequeñas */
+    display: grid;
+    place-items: center;
+    position: absolute;
+  }
+  
+  .div1 video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .div2 {
+    background-color: transparent;
+    position: fixed;
+    top:  71%;
+    left: 15%;
+    z-index: 1; /* Controla el orden de apilamiento */
+  }
+
+  @media screen and (max-width: 767px) {
+    body {
+      margin: 0; /* Eliminar márgenes del cuerpo */
+      padding: 0; /* Eliminar relleno del cuerpo */
+      overflow: hidden; /* Evitar desplazamiento vertical */
+    }
+  }
